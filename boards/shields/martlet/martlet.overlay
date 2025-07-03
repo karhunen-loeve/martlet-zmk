@@ -69,9 +69,10 @@
             //                                 |    -    |    -    |  Space  | ----- |  Enter  |    -    |    -    |
             
             bindings = <
-                &kp LSHIFT   &kp Q     &kp W     &kp F     &kp P     &kp B             &kp J     &kp L     &kp W     &kp Y     &kp F     &kp RSHIFT
-                &kp RCTRL    &kp A     &kp R     &kp S     &kp T     &kp G             &kp M     &kp N     &kp E     &kp I     &kp O     &kp RCTRL
-                                                 &kp S     &kp T     &kp SPACE         &kp ENTER &kp N     &kp E 
+                &kp Q    &kp Q     &kp W     &kp F     &kp P     &kp B             &kp J     &kp L     &kp W     &kp Y     &kp F     &kp Q
+                &kp Q    &kp A     &kp R     &kp S     &kp T     &kp G             &kp M     &kp N     &kp E     &kp I     &kp O     &kp Q
+                         &kp Z     &kp X     &kp C     &kp D     &kp V             &kp K     &kp Q     &kp Q     &kp Q     &kp Q
+                                             &kp S     &kp T     &kp Q             &kp Q     &kp N     &kp E 
             >;
         };
     };
