@@ -31,9 +31,9 @@
             //                                 |    -    |    -    |  Space  | ----- |  Enter  |    -    |    -    |
             
             bindings = <
-                &sk LSHIFT   &kp Q     &kp W     &kp F     &kp P     &kp B             &kp J     &kp L     &kp U     &kp Y     &kp RBKT  &sk RSHIFT
+                &sk LSHIFT   &kp Q     &kp W     &kp F     &kp P     &kp B             &kp J     &kp L     &kp U     &kp Z     &kp RBKT  &sk RSHIFT
                 &sk LCTRL    &kp A     &kp R     &kp S     &kp T     &kp G             &kp M     &kp N     &kp E     &kp I     &kp O     &sk RCTRL
-                             &kp Z     &kp X     &kp C     &kp D     &kp V             &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
+                             &kp Y     &kp X     &kp C     &kp D     &kp V             &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
                                                  &sk LALT  &mo CODE  &kp SPACE         &kp ENTER &mo NAV   &sk RALT 
             >;
         };
@@ -47,7 +47,7 @@
             
             bindings = <
                   &trans     &kp ESC          &kp F9    &ctrl_ralt N8  &ctrl_ralt N9   &kp F7            &kp BSLH       &kp RBRC       &kp LBKT        &kp EXCL    &kp BSPC           &trans
-                  &trans     &kp APOS         &kp F5    &kp MINUS      &kp F10         &kp 12            &kp CARET      &kp STAR       &kp LPAR        &kp RPAR    &kp SEMI           &trans
+                  &trans     &kp APOS         &kp F5    &kp MINUS      &kp F10         &kp F12           &kp CARET      &kp STAR       &kp LPAR        &kp RPAR    &kp SEMI           &trans
                              &ctrl_ralt NUBS  &kp PLUS  &kp NUBS       &kp LS(NUBS)    &kp F11           &kp LS(MINUS)  &ctrl_ralt N7  &ctrl_ralt N0   &kp LS(N7)  &ctrl_ralt(MINUS)
                                                         &trans         &trans          &trans            &kp BSPC       &trans         &kp DEL 
             >;
