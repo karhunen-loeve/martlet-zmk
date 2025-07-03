@@ -9,8 +9,9 @@
 / {
 
     macros {
+        // this macro is used to type german umlauts
         ctrl_ralt: ctrl_ralt {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings
                 = <&kp LCTRL &kp RALT>
