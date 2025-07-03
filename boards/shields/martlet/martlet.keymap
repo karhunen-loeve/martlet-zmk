@@ -34,7 +34,7 @@
                 &kp LSHIFT   &kp Q     &kp W     &kp F     &kp P     &kp B             &kp J     &kp L     &kp W     &kp Y     &kp RBKT  &kp RSHIFT
                 &kp LCTRL    &kp A     &kp R     &kp S     &kp T     &kp G             &kp M     &kp N     &kp E     &kp I     &kp O     &kp RCTRL
                              &kp Z     &kp X     &kp C     &kp D     &kp V             &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
-                                                 &kp LALT  &mo CODE  &kp SPACE         &kp ENTER &mo CODE  &kp RALT 
+                                                 &kp LALT  &mo CODE  &kp SPACE         &kp ENTER &mo NAV   &kp RALT 
             >;
         };
 
@@ -53,20 +53,20 @@
             >;
         };
 
-        // nav { // Layer 2
-        //     // -------------------------------------
-        //     // |   &trans   |    1           |    2    |    3        |    4        |    5    | ----- |    6         |    7        |    8         |    9     |    0            |   &trans   |
-        //     // |   &trans   |                |         |  ALT + F4   | Lock screen |         | ----- |              |   LEFT      |   DOWN       |    UP    |    RIGHT        |   &trans   |
-        //     //              |    GUI         |         |  CAPS       |   ^/°       |         | ----- |              |   HOME      |   PgDn       |    PgUp  |    End          |  
-        //     //                                         | &trans      | &trans      |  Tab    | ----- |  Enter       | &trans      | &trans       |
-        //     
-        //     bindings = <
-        //           &trans     &kp N1           &kp N2    &kp N3        &kp N4         &kp N5            &kp N6         &kp N7        &kp N8         &kp N9     &kp N0             &trans
-        //           &trans     &none            &none     &kp LA(F4)    &LG(L)         &none             &none          &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT          &trans
-        //                      &sk LWIN         &none     &caps_word    &kp GRAVE      &none             &none          &kp HOME      &kp PG_DOWN    &kp PG_UP  &kp END
-        //                                                 &trans        &trans         &TAB              &kp ENTER      &trans        &trans 
-        //     >;
-        // };
+        nav { // Layer 2
+            // -------------------------------------
+            // |   &trans   |    1           |    2    |    3        |    4        |    5    | ----- |    6         |    7        |    8         |    9     |    0            |   &trans   |
+            // |   &trans   |                |         |  ALT + F4   | Lock screen |         | ----- |              |   LEFT      |   DOWN       |    UP    |    RIGHT        |   &trans   |
+            //              |    GUI         |         |  CAPS       |   ^/°       |         | ----- |              |   HOME      |   PgDn       |    PgUp  |    End          |  
+            //                                         | &trans      | &trans      |  Tab    | ----- |  Enter       | &trans      | &trans       |
+            
+            bindings = <
+                  &trans     &kp N1           &kp N2    &kp N3        &kp N4         &kp N5            &kp N6         &kp N7        &kp N8         &kp N9     &kp N0             &trans
+                  &trans     &none            &none     &kp LA(F4)    &LG(L)         &none             &none          &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT          &trans
+                             &sk LWIN         &none     &caps_word    &kp GRAVE      &none             &none          &kp HOME      &kp PG_DOWN    &kp PG_UP  &kp END
+                                                        &trans        &trans         &kp TAB           &kp ENTER      &trans        &trans 
+            >;
+        };
 
     };
 
