@@ -39,16 +39,16 @@
 
         code { // Layer 0
             // -------------------------------------
-            // |   &trans   |   ESC          |    F9   |    [        |    ]        |    F7   | ----- |    #    |    *    |    Ü    |    !    |   Bksp  |   &trans   |
-            // |   &trans   |    Ä           |    F5   |    ß        |   F10       |   F12   | ----- |    &    |    (    |    )    |    =    |    Ö    |   &trans   |
-            //              |    |           |    `    |    <        |    >        |   F11   | ----- |    ?    |    {    |    }    |    /    |    \    |  
-            //                                         | &trans      | &trans      | &trans  | ----- | &trans  | &trans  | &trans  |
+            // |   &trans   |   ESC          |    F9   |    [        |    ]        |    F7   | ----- |    #         |    *        |    Ü         |    !     |   Bksp          |   &trans   |
+            // |   &trans   |    Ä           |    F5   |    ß        |   F10       |   F12   | ----- |    &         |    (        |    )         |    =     |    Ö            |   &trans   |
+            //              |    |           |    `    |    <        |    >        |   F11   | ----- |    ?         |    {        |    }         |    /     |    \            |  
+            //                                         | &trans      | &trans      | &trans  | ----- | &trans       | &trans      | &trans       |
             
             bindings = <
-                  &trans     &kp ESC          &kp F9    &ctrl_ralt 8  &ctrl_ralt 9   &kp F7            &kp BSLH  &kp RBRC  &kp LBKT  &kp EXCL  &kp BSPC  &trans
-                  &trans     &kp APOS         &kp F5    &kp MINUS     &kp F10        &kp 12            &kp CARET &kp STAR  &kp LPAR  &kp RPAR  &kp SEMI  &trans
-                             &ctrl_ralt NUBS  &kp PLUS  &kp NUBS      &kp LS(NUBS)   &kp F11           &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
-                                                        &trans        &trans         &trans            &trans    &trans    &trans 
+                  &trans     &kp ESC          &kp F9    &ctrl_ralt 8  &ctrl_ralt 9   &kp F7            &kp BSLH       &kp RBRC      &kp LBKT       &kp EXCL   &kp BSPC           &trans
+                  &trans     &kp APOS         &kp F5    &kp MINUS     &kp F10        &kp 12            &kp CARET      &kp STAR      &kp LPAR       &kp RPAR   &kp SEMI           &trans
+                             &ctrl_ralt NUBS  &kp PLUS  &kp NUBS      &kp LS(NUBS)   &kp F11           &kp LS(MINUS)  &ctrl_ralt 7  &ctrl_ralt 0   &kp LS(7)  &ctrl_ralt(MINUS)
+                                                        &trans        &trans         &trans            &kp BSPC       &trans        &kb DEL 
             >;
         };
 
