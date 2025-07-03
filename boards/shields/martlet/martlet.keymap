@@ -18,7 +18,7 @@
         };
     };
 
-
+    // NOTE: this is a german keyboard layout.
     keymap {
         compatible = "zmk,keymap";
 
@@ -33,11 +33,11 @@
                 &kp LSHIFT   &kp Q     &kp W     &kp F     &kp P     &kp B             &kp J     &kp L     &kp W     &kp Y     &kp RBKT  &kp RSHIFT
                 &kp LCTRL    &kp A     &kp R     &kp S     &kp T     &kp G             &kp M     &kp N     &kp E     &kp I     &kp O     &kp RCTRL
                              &kp Z     &kp X     &kp C     &kp D     &kp V             &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
-                                                 &kp LALT  &mo CODE  &kp SPACE         &kp ENTER &mo CODE  &kp RALT 
+                                                 &kp LALT  &mo CODE  &kp SPACE         &kp ENTER &mo NAV   &kp RALT 
             >;
         };
 
-        code { // Layer 0
+        code { // Layer 1
             // -------------------------------------
             // |   &trans   |   ESC          |    F9   |    [        |    ]        |    F7   | ----- |    #         |    *        |    Ü         |    !     |   Bksp          |   &trans   |
             // |   &trans   |    Ä           |    F5   |    ß        |   F10       |   F12   | ----- |    &         |    (        |    )         |    =     |    Ö            |   &trans   |
@@ -45,7 +45,22 @@
             //                                         | &trans      | &trans      | &trans  | ----- | &trans       | &trans      | &trans       |
             
             bindings = <
-                  &trans     &kp ESC          &kp F9    &ctrl_ralt 8  &ctrl_ralt 9   &kp F7            &kp BSLH       &kp RBRC      &kp LBKT       &kp EXCL   &kp BSPC           &trans
+                  &trans     &kp ESC          &kp F9    &ctrl_ralt N8  &ctrl_ralt N9   &kp F7            &kp BSLH       &kp RBRC       &kp LBKT        &kp EXCL    &kp BSPC           &trans
+                  &trans     &kp APOS         &kp F5    &kp MINUS      &kp F10         &kp 12            &kp CARET      &kp STAR       &kp LPAR        &kp RPAR    &kp SEMI           &trans
+                             &ctrl_ralt NUBS  &kp PLUS  &kp NUBS       &kp LS(NUBS)    &kp F11           &kp LS(MINUS)  &ctrl_ralt N7  &ctrl_ralt N0   &kp LS(N7)  &ctrl_ralt(MINUS)
+                                                        &trans         &etrans         &trans            &kp BSPC       &trans         &kb DEL 
+            >;
+        };
+
+        nav { // Layer 2
+            // -------------------------------------
+            // |   &trans   |    1           |    2    |    3        |    4        |    5    | ----- |    6         |    7        |    8         |    9     |    0            |   &trans   |
+            // |   &trans   |                |         |  ALT + F4   | Lock screen |         | ----- |              |   LEFT      |   DOWN       |    UP    |    RIGHT        |   &trans   |
+            //              |    GUI         |         |  CAPS       |   ^/°       |         | ----- |              |   HOME      |   PgDn       |    PgUp  |    End          |  
+            //                                         | &trans      | &trans      |  Tab    | ----- |  Enter       | &trans      | &trans       |
+            
+            bindings = <
+                  &trans     &kp N1           &kp N2    &kp N3        &kp N4         &kp N5            &kp N6         &kp N7        &kp N8         &kp N9     &kp N0             &trans
                   &trans     &kp APOS         &kp F5    &kp MINUS     &kp F10        &kp 12            &kp CARET      &kp STAR      &kp LPAR       &kp RPAR   &kp SEMI           &trans
                              &ctrl_ralt NUBS  &kp PLUS  &kp NUBS      &kp LS(NUBS)   &kp F11           &kp LS(MINUS)  &ctrl_ralt 7  &ctrl_ralt 0   &kp LS(7)  &ctrl_ralt(MINUS)
                                                         &trans        &trans         &trans            &kp BSPC       &trans        &kb DEL 
