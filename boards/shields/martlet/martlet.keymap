@@ -8,6 +8,18 @@
 
 / {
 
+    &caps_word{
+        continue-list = <UNDERSCORE MINUS>;
+    }
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        misc_layer {
+            if-layers = <CODE NAV>;
+            then-layer = <MISC>;
+        };
+    };
+
     macros {
         // this macro is used to type german umlauts
         ctrl_ralt: ctrl_ralt {
@@ -73,6 +85,21 @@
                   &trans     &none            &none     &kp LA(F4)    &kp LG(L)      &none             &none          &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT          &trans
                              &sk LGUI         &none     &caps_word    &kp GRAVE      &none             &none          &kp HOME      &kp PG_DN      &kp PG_UP  &kp END
                                                         &trans        &trans         &kp TAB           &kp ENTER      &trans        &trans                                                      
+            >;
+        };
+
+        misc { // Layer 3
+            // -------------------------------------
+            // |   &none    |    F1          |    F2   |    F3       |    F4       |    F5   | ----- |    F6        |    F7       |    F8        |    F9    |    F10          |   &none   |
+            // |   &none    |    Mute        |  Vol-   |  Vol+       |             | MB_Left | ----- |  MB_Rigth    | M_LEFT      |  M_DOWN      |   M_UP   |   M_RIGHT       |   &none   |
+            //              |                |         |             |             |  frwd   | ----- |  back        |             |   scroll_dn  | scroll_up|                 |  
+            //                                         | &trans      | &trans      |  &trans | ----- |  Enter       | &trans      | &trans       |
+            
+            bindings = <
+                  &none      &kp F1           &kp F2    &kp F3        &kp F4         &kp F5            &kp F6         &kp F7        &kp F8         &kp F9     &kp F10            &none
+                  &none      &none            &none     &none         &none          &none             &none          &none         &none          &none      &none              &none
+                             &none            &none     &none         &none          &none             &none          &none         &none          &none      &none
+                                                        &trans        &trans         &trans            &trans         &trans        &trans                                                      
             >;
         };
 
