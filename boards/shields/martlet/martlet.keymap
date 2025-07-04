@@ -15,7 +15,7 @@
             #binding-cells = <1>;
             bindings
                 = <&macro_param_1to1>
-                , <&kp LC(RA(MACRO_PLACEHOLDER))>
+                , <&kp RA(MACRO_PLACEHOLDER)>
                 ;
         };
     };
