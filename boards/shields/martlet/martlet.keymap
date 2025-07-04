@@ -6,11 +6,11 @@
 #define NAV   2
 #define MISC  3
 
-/ {
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
 
-    &caps_word{
-        continue-list = <UNDERSCORE MINUS>;
-    };
+/ {
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
