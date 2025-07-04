@@ -14,7 +14,7 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings
-                = <&kp LCTRL + RALT + MACRO_PLACEHOLDER>
+                = <&kp LC(RA(MACRO_PLACEHOLDER))>
                 ;
         };
     };
