@@ -10,7 +10,7 @@
 
     &caps_word{
         continue-list = <UNDERSCORE MINUS>;
-    }
+    };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
