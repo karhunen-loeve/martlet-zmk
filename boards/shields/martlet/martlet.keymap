@@ -1,5 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 #define ALPHA 0
 #define CODE  1
@@ -97,8 +98,8 @@
             
             bindings = <
                   &none      &kp F1           &kp F2        &kp F3        &kp F4         &kp F5            &kp F6         &kp F7          &kp F8          &kp F9        &kp F10            &none
-                  &none      &kp C_MUTE       &kp C_VOL_DN  &kp C_VOL_UP  &none          &mkp LCLK         &mkp RCLK      &none           &none           &none         &none              &none
-                             &none            &none         &none         &none          &kp K_FORWARD     &kp K_BACK     &none           &msc SCRL_DOWN  &msc SCRL_UP  &none
+                  &none      &none            &none         &none         &none          &none             &none          &none           &none           &none         &none              &none
+                             &none            &none         &none         &none          &none             &none          &none           &none           &none         &none
                                                             &trans        &trans         &trans            &trans         &trans          &trans                                                      
             >;
         };
