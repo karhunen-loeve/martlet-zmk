@@ -14,7 +14,7 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings
-                = <&kp LCTRL &kp RALT>
+                = <&kp LCTRL + RALT + >
                 ;
         };
     };
