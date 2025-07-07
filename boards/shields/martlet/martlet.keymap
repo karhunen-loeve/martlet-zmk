@@ -14,6 +14,10 @@
     continue-list = <UNDERSCORE MINUS>;
 };
 
+&mt {
+    tapping-term-ms = <150>; 
+};
+
 / {
 
     conditional_layers {
@@ -43,9 +47,6 @@
         };
     };
 
-    &mt {
-        tapping-term-ms = <150>; 
-    };
 
     // NOTE: this is a german keyboard layout.
     keymap {
