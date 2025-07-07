@@ -43,22 +43,26 @@
         };
     };
 
+    &mt {
+        tapping-term-ms = <150>; 
+    };
+
     // NOTE: this is a german keyboard layout.
     keymap {
         compatible = "zmk,keymap";
 
         alpha { // Layer 0
             // -------------------------------------
-            // |   Shift   |    Q    |    W    |    F    |    P    |    B    | ----- |    J    |    L    |    U    |    Y    |    +    |   Shift   |
-            // |   Ctrl    |    A    |    R    |    S    |    T    |    G    | ----- |    M    |    N    |    E    |    I    |    O    |   Ctrl    |
-            //             |    Z    |    X    |    C    |    D    |    V    | ----- |    K    |    H    |    ,    |    .    |    -    |  
-            //                                 |    -    |    -    |  Space  | ----- |  Enter  |    -    |    -    |
+            // |   Shift   |    Q       |    W    |    F    |    P    |    B    | ----- |    J    |    L    |    U    |    Y    |    +        |   Shift   |
+            // |   Ctrl    |  Shift/A   |    R    |    S    |    T    |    G    | ----- |    M    |    N    |    E    |    I    |    O        |   Ctrl    |
+            //             |  Ctrl/Z    |    X    |    C    |    D    |    V    | ----- |    K    |    H    |    ,    |    .    |    -        |  
+            //                                    |    -    |    -    |  Space  | ----- |  Enter  |    -    |    -    |
             
             bindings = <
-                &sk LSHIFT   &kp Q     &kp W     &kp F     &kp P     &kp B             &kp J     &kp L     &kp U     &kp Z     &kp RBKT  &sk RSHIFT
-                &sk LCTRL    &kp A     &kp R     &kp S     &kp T     &kp G             &kp M     &kp N     &kp E     &kp I     &kp O     &sk RCTRL
-                             &kp Y     &kp X     &kp C     &kp D     &kp V             &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
-                                                 &sk LALT  &mo CODE  &kp SPACE         &kp ENTER &mo NAV   &sk RALT 
+                &sk LSHIFT   &kp Q        &kp W     &kp F     &kp P     &kp B             &kp J     &kp L     &kp U     &kp Z     &kp RBKT      &sk RSHIFT
+                &sk LCTRL    &mt LSHIFT A &kp R     &kp S     &kp T     &kp G             &kp M     &kp N     &kp E     &kp I     &mt RSHIFT O  &sk RCTRL
+                             &mt LCTRL Y  &kp X     &kp C     &kp D     &kp V             &kp K     &kp H     &kp COMMA &kp DOT   &mt RCTRL FSLH
+                                                    &sk LALT  &mo CODE  &kp SPACE         &kp ENTER &mo NAV   &sk RALT 
             >;
         };
 
