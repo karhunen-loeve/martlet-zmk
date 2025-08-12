@@ -10,9 +10,6 @@
 #define MISC  3
 #define CON   4
 
-&caps_word {
-    continue-list = <UNDERSCORE MINUS>;
-};
 
 &mt {
     tapping-term-ms = <150>; 
