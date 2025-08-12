@@ -11,7 +11,7 @@
 #define CON   4
 
 &caps_word {
-  continue-list = <UNDERSCORE MINUS BSPC FSLH QUESTION_MARK>;
+  continue-list = <UNDERSCORE MINUS BACKSPACE BACKSPACE>;
 };
 
 &mt {
