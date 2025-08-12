@@ -1,5 +1,1 @@
 #include <dt-bindings/zmk/matrix_transform.h> 
-
-&caps_word {
-  continue-list = <UNDERSCORE MINUS BSPC>;
-};
