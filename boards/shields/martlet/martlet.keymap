@@ -17,10 +17,7 @@
 
 &mt {
     tapping-term-ms = <150>; 
-=======
-
-&caps_word {
-    continue-list = <UNDERSCORE MINUS>;
+};
 
 
 / {
