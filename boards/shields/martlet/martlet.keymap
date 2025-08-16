@@ -8,6 +8,7 @@
 #define CODE  1
 #define NAV   2
 #define MISC  3
+
 #define CON   4
 
 &caps_word {
@@ -16,7 +17,11 @@
 
 &mt {
     tapping-term-ms = <150>; 
-};
+=======
+
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+
 
 / {
 
@@ -46,8 +51,7 @@
                 ;
         };
     };
-
-
+    
     // NOTE: this is a german keyboard layout.
     keymap {
         compatible = "zmk,keymap";
@@ -103,6 +107,7 @@
             // |   &none    |    Mute        |  Vol-       |  Vol+       |             | MB_Left | ----- |  MB_Rigth    | M_LEFT        |  M_DOWN       |   M_UP     |   M_RIGHT       |   &none   |
             //              |    Layer(con)  |             |             |             |  frwd   | ----- |  back        |               |   scroll_dn   | scroll_up  |                 |  
             //                                             | &trans      | &trans      |  &trans | ----- |  &trans      | &trans        | &trans        |
+
             
             bindings = <
                   &none      &kp F1           &kp F2        &kp F3        &kp F4         &kp F5            &kp F6         &kp F7          &kp F8          &kp F9        &kp F10            &none
@@ -126,7 +131,6 @@
                                                             &trans         &trans        &trans            &to ALPHA     &trans          &trans                                                      
             >;
         };
-
     };
 
 };
