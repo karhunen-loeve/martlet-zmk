@@ -3,10 +3,10 @@
 / {
 
 
-    chosen {
-        zmk,physical-layout = &physical_layout0;
-        // Other chosen items
-    };
+//    chosen {
+//        zmk,physical-layout = &physical_layout0;
+//        // Other chosen items
+//    };
 //
 //    physical_layout0: physical_layout_0 { // First physical layout, use different naming for other layouts
 //        compatible = "zmk,physical-layout";

@@ -88,7 +88,7 @@
             // |   &trans   |    1           |    2    |    3        |    4        |    5    | ----- |    6         |    7        |    8         |    9     |    0            |   &trans   |
             // |   &trans   |                |         |  ALT + F4   | Lock screen |         | ----- |              |   LEFT      |   DOWN       |    UP    |    RIGHT        |   &trans   |
             //              |    GUI         |         |  CAPS       |   ^/°       |         | ----- |              |   HOME      |   PgDn       |    PgUp  |    End          |
-            //                                         | &trans      | &trans      |  Tab    | ----- |  Enter       | &trans      | &trans       |
+          q  //                                         | &trans      | &trans      |  Tab    | ----- |  Enter       | &trans      | &trans       |
 
             bindings = <
                   &trans     &kp N1           &kp N2    &kp N3        &kp N4         &kp N5            &kp N6         &kp N7        &kp N8         &kp N9     &kp N0             &trans
@@ -122,7 +122,7 @@
             //                                             | &trans      | &trans      |  &trans | ----- |  &trans     | &trans        | &trans        |
 
             bindings = <
-                  &none      &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4      &none         &none           &none           &none        &bt BT_CLR         &none
+                  &none      &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4      &none         &none           &none           &none        &bt BT_CLR         &studio_unlock
                   &none      &none            &none         &none          &none         &none             &none         &none           &none           &none        &none              &none
                              &none            &none         &none          &none         &none             &none         &none           &none           &none        &none
                                                             &trans         &trans        &trans            &to ALPHA     &trans          &trans
