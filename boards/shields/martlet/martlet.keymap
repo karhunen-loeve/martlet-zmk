@@ -19,9 +19,6 @@
     tapping-term-ms = <150>;
 };
 
-&studio_unlock {
-    compatible = "zmk,behavior-studio-unlock";
-};
 
 / {
 
